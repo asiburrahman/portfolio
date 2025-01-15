@@ -1,0 +1,338 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800 */
+
+.open-sans-normal {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* Shared Style */
+.button-primary{
+    background-color: #FD6E0A;
+    color: white;
+    font-weight: 600;
+    width: 150px;
+    height: 64px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 20px;
+    box-shadow: 0px 10px 10px rgb(145, 144, 144);
+
+
+}
+.font-color-primary{
+    color: #181818;
+}
+.font-color-secondary{
+    color:#474747;
+}
+.font-color-third{
+    color: #757575;
+}
+.bg-color-primary{
+    background-color: #FFF8F3;
+}
+.text-center{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+/* nav style */
+.nav-title{
+    font-size: 45px;
+    font-weight: 800;
+
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 230px;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 51px;
+}
+.nav-i{
+    font-style: italic;
+    color: #FD6E0A;
+    
+
+
+}
+.nav-menu li{
+    list-style: none;
+    /* text-decoration: none; */
+    font-family: 20px;
+}
+/* nav menu design end */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 38px 0px 230px;
+}
+
+.banner-content{
+    max-width: 700px;
+    max-height: 356px;
+}
+.banner-content h3{
+    font-size: 45px;
+    margin-bottom: 0px;
+}
+.banner-content h1{
+    font-size: 85px;
+    margin: 0px;
+}
+.banner-content p{
+    font-size: 18px;
+}
+.download-btn{
+    margin-right: 20px;
+    width: 200px;
+    text-align: center;
+}
+.download-btn i{
+    margin-right: 5px;
+}
+.contact-btn{
+    border: 1px solid #FD6E0A;
+    color:  #FD6E0A;
+    background-color: white;
+}
+.contact-btn i{
+    margin-right: 5px;
+}
+.banner-img{
+    width: 580px;
+    margin-bottom: -4px;
+}
+
+header{
+    background-image: url(../images/developer.png), url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+}
+
+/* About me section start */
+
+menu{
+    width: 1140px;
+    margin: 0 auto;
+}
+.menu-container{
+    height: 550px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-container{
+    height: 288px;
+    width: 827px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 0px 10px 0px 10px;
+}
+.about-container p{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.about-me{
+    font-weight: 700;
+    font-size: 35px;
+
+}
+.biodata-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.biodata-container p{
+    color: #757575;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.biodata-container h2{
+    color:#474747;
+    font-size: 20;
+    font-weight: 700;
+    margin-top: 0px;
+    
+}
+
+/* what i do section start */
+.what-i-do-title{
+    font-weight: 700;
+    font-size: 36px;
+}
+.what-i-do-description{
+    padding: 0px 150px 0px 150px;
+  
+}
+
+.skill-container{
+    margin-top: 80px;
+    display: flex;
+    gap: 24px;
+    
+}
+
+.skill{
+    padding: 35px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+/* experience description */
+.experience-container{
+    margin-top: 130px;
+}
+.experience-container button{
+    text-align: center;
+}
+
+.resume-container{
+    display: flex;
+    gap: 24px;
+}
+/* footer section design */
+footer{
+    margin-top: 50px;
+    display: flex;
+    gap: 117px;
+    padding: 0px 260px 0px 260px;
+    
+
+}
+.social-container ,.message-container{
+    margin-top: 130px;
+}
+.contact-form input[type=text], input[type=email]{
+    width:461px;
+    height: 64px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.073);
+}
+.contact-form textarea{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.073);
+    margin-bottom: 5px;
+}
+.contact-form input::placeholder{
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+/* Responsive section */
+
+@media screen and (max-width: 576px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    menu{
+        width: 100vw;  
+        margin: 0;
+        padding: 0;
+    }
+    .what-i-do-description{
+        padding: 0px;
+        margin: 0px;
+    }
+     
+
+    .skill-container, .resume-container , .bg-color-primary, 
+    .biodata-container, .banner {
+        flex-direction: column;
+        height: auto;
+    }
+   
+
+    .resume-container{
+        padding: 10px;
+    }
+    .bg-color-primary{
+        padding: 0;
+    }
+
+    .message-title{
+        text-align: center;
+    }
+    
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form input[type=text], input[type=email]{
+        width: 90vw;
+    }
+    .contact-form > textarea{
+        width: 90vw;
+    }
+
+    .menu-container{
+        width: 100vw;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .about-container{
+        width: 90vw;
+        height: auto;
+        padding: 10px;
+    }
+    .biodata p{
+        color: rgb(14, 60, 199);
+        text-align: center;
+    }
+
+    header{
+        background-image: none;
+    }
+    .banner{
+        margin: 0;
+        width: 100vw;
+        height: auto;
+    }
+    footer{
+        
+        gap: 0px;
+
+    }
+
+    .banner-content{
+        width: 100vw;
+        height: auto;
+
+        
+    }
+    .banner-content h1{
+        font-size: 50px ;
+    }
+    .banner-img{
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+    .banner-img> img{
+        width: 100%;
+    }
+
+    .nav-container{
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+    } 
+}
